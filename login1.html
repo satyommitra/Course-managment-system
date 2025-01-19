@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-neon-double-color-futuristic-frame-colorful-background-picture-image_1178693.jpg");
+            background-size:cover;
+            FONT: SIZE 75px;
+            margin-right: 37px;
+
+        }
+        .Input-group 1{
+          margin: 4px;
+          padding: 5%;
+        }
+        body{
+         margin: 0;
+         padding: 0;
+         max-width: 100%;
+         background-color:white;
+         color: white;
+
+         
+        }
+        h2{
+            margin: 0;
+            margin-top: 220px;
+            background: skyblue;
+            text-align: center;
+            font-size: xx-large;
+            color: white;
+        }
+        center{
+            text-align: initial;
+            margin-left: 600px;
+            margin-right: 580px;
+        }
+        
+
+      </style>
+  
+  <title>Login Form</title>
+</head>
+ 
+<body>
+  <center>
+  <div class="Login">
+    <form action="" class="Form">
+      <h2>Login as faculty</h2>
+      <br>
+      <div class="Input-group 1">
+        <input type="text" name="Loginuser" id="email" required />
+        <label for="Loginuser">EmailAddress</label>
+      </div>
+      <div class="Input-group 2">
+        <input
+        type="password"
+        name="Loginpassword"
+        id="password" required/>
+        <label for="Loginpassword">Password</label>
+      </div>
+      <input type="submit" value="login" class="Submit-btn" onclick="auth()">
+    </form>
+  </div>
+
+  <script>
+    function auth()
+    {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      if(email == "admin@gmail.com" && password == "admin"){
+        window.location.assign("home2.html");
+        alert("Login Succesfully");
+      }
+      else{
+        alert("Invalid Information");
+      }
+    }
+  </script>
+  </center>
+  </body>
+
+</html>

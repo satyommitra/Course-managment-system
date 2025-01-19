@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background-color:black ;
+            background-size:cover;
+            FONT: SIZE 75px;
+            margin-right: 37px;
+
+        }
+        .Input-group 1{
+          margin: 5px;
+          padding: 5%;
+        }
+        
+        h2{
+            margin: 0;
+            margin-top: 220px;
+            background: rgb(247, 111, 245);
+            text-align: center;
+            font-size: xx-large;
+            color: white;
+        }
+        center{
+            text-align: initial;
+            margin-left: 600px;
+            margin-right: 580px;
+        }
+        .box{
+            background-color: skyblue;
+        }
+
+      </style>
+  
+  <title>signin Form</title>
+</head>
+ 
+<body>
+  <center>
+  <div class="Login">
+    <form action="" class="Form">
+      <h2>Login as Student</h2>
+      <br>
+      <div class="Input-group 1">
+        <input type="text" name="Loginuser" id="email" required />
+        <label for="Loginuser">Email Address</label>
+      </div>
+      <div class="Input-group 2">
+        <input
+        type="password"
+        name="Loginpassword"
+        id="password" required/>
+        <label for="Loginpassword">Password</label>
+      </div>
+      <input type="submit" value="login" class="Submit-btn" onclick="auth()" />
+    </form>
+  </div>
+
+  <script>
+    function auth()
+    {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      if(email == "admin@gmail.com" && password == "expense"){
+        window.location.assign("home.html");
+        alert("Login Succesfully");
+      }
+      else{
+        alert("Invalid Information");
+      }
+    }
+  </script>
+  </center>
+  </body>
+
+</html>
